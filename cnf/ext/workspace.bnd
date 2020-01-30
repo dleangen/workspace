@@ -1,0 +1,15 @@
+##################################################################
+#
+# This plugin defines the Workspace.
+#
+# Customize these values for each Workspace.
+#
+##################################################################
+
+workspaceName:			WORKSPACE
+
+gitUrl:					https://github.org
+gitGroup:				GROUP
+
+nexusUrl				http://your.nexus.com
+nexusContext			pathOnNexus

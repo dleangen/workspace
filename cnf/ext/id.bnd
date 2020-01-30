@@ -1,0 +1,31 @@
+##################################################################
+#
+# This plugin defines information about the identity of the
+# developer(s).
+#
+##################################################################
+
+git.url:				${def;gitUrl;"https://github.org"}
+git.group:				${def;gitGroup;"GROUP"}
+workspace.name:			${def;workspaceName;"WORKSPACE"}
+
+copyright.year:			${tstamp;yyyy}
+copyright.holder:		Your Name
+copyright:				Copyright (c) ${copyright.holder} (2014, ${copyright.year}). All Rights Reserved.
+git.url:				${git.baseUrl}/${git.group}/${workspace.name}
+
+Bundle-Copyright: 		${copyright}
+Bundle-Vendor:    		Your Name
+Bundle-License: 		https://your.license.com; \
+                			link="https://your.license.com"; \
+                			description="eXpedition License"
+Bundle-DocURL:    		https://documentation.com
+Bundle-SCM:       		url=${git.url}, \
+                  			connection=scm:git:${git.url}.git, \
+                  			developerConnection=scm:git:${git.url}.git
+Bundle-Developers: 		developer; \
+							email=you@example.com; \
+							name="NAME"; \
+							organization="ORG"
+
+Bundle-ContactAddress:	you@example.com
