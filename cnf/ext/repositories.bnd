@@ -22,7 +22,6 @@ nexus.location:			${nexus.base}/repository
 nexus.repo:				${nexus.location}/maven
 # The Release repo holds the released provider bundles to be deployed
 releaserepo:			${nexus.location}/${nexus.path}
-osgirepo:				osgi-distro
 # OBR Repository
 obrrepo:				${nexus.location}/obr
 
@@ -32,7 +31,7 @@ obrrepo:				${nexus.location}/obr
 	aQute.bnd.repository.maven.pom.provider.BndPomRepository; \
 		snapshotUrls=${nexus.repo}-public/; \
 		releaseUrls=${nexus.repo}-public/; \
-		pom=${build}/development.xml; \
+		pom=${build}/ext/development.xml; \
 		name="Development"; \
 		location=${build}/cache/development.xml
 
