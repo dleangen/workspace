@@ -12,7 +12,7 @@ workspace.name:			${def;workspaceName;"WORKSPACE"}
 copyright.year:			${tstamp;yyyy}
 copyright.holder:		Your Name
 copyright:				Copyright (c) ${copyright.holder} (2014, ${copyright.year}). All Rights Reserved.
-git.url:				${git.baseUrl}/${git.group}/${workspace.name}
+git.url:				${git.url}/${git.group}/${workspace.name}
 
 Bundle-Copyright: 		${copyright}
 Bundle-Vendor:    		Your Name
