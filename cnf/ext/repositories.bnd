@@ -38,5 +38,6 @@ obrrepo:				${nexus.location}/obr
 # Release Repository 
 -plugin.30.Release:  \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
-    	releaseUrl      = ${releaserepo}/; \
-		name            = Release
+		releaseUrl= ${releaserepo}/; \
+		index=${build}/ext/release.mvn; \
+		name= Release

@@ -7,6 +7,7 @@
 ##################################################################
 
 workspaceName:			WORKSPACE
+workspaceGroup:         com.example
 
 gitUrl:					https://github.org
 gitGroup:				GROUP
