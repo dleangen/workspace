@@ -36,6 +36,7 @@ obrrepo:				${nexus.location}/obr
 		location=${build}/cache/development.xml
 
 # Release Repository 
+-releaserepo:            Release
 -plugin.30.Release:  \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
 		releaseUrl= ${releaserepo}/; \
