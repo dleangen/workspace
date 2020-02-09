@@ -39,17 +39,10 @@ Git-SHA:                ${system-allow-fail;git rev-list -1 HEAD}
 pwd = ${env;REPO_PASSWORD;}
 usr = ${env;REPO_USERNAME;}
 
-base.version:			1.0.0.${tstamp}
-
-# If the build is Local, use the timestamp with the version. Otherwise, if this
-# is a release build, remove the timestamp.
-vmask = ${if;${userepo};===~;====}
-build.version = ${versionmask;${vmask};${base.version}}
-
 group.id:				${def;workspaceGroup;"com.example"}
 -groupid:               ${group.id}
 snapshot:				${if;${userepo};;-SNAPSHOT}
--pom:                   version=${versionmask;===~;${base.version}}${snapshot}
+-pom:                   version=${versionmask;===~;${Bundle-Version}}${snapshot}
 
 nexusId:				${def;nexus.base;"http://nexus.default.com"}
 
