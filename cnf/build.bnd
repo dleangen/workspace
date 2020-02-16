@@ -5,9 +5,7 @@ Bundle-Version:         1.0.0.${tstamp}
 -runfw:                 org.apache.felix.framework
 -runee:                 JavaSE-1.8
 
--includepackage: *;from:=classes
-
--includepackage: *;from:=classes
+-includepackage.base:	*;from:=classes
 
 -testpath.build: \
 	biz.aQute.launchpad,\
@@ -25,10 +23,6 @@ Bundle-Version:         1.0.0.${tstamp}
 	org.assertj.core
 
 -resolve.effective:     resolve, active
-
-baseline.version:       0.0.0
-base.version:           1.0.0
--baseline: 				*
 
 Git-Descriptor:         ${system-allow-fail;git describe --dirty --always}
 Git-SHA:                ${system-allow-fail;git rev-list -1 HEAD}

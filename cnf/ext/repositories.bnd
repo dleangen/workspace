@@ -13,7 +13,6 @@ local:					${build}/local
 # If the RELEASE variable is set, it signals that we want to release externally.
 # Otherwise, we only release locally.
 userepo:				${env;REMOTE_RELEASE;}
-repo:					${if;${userepo};Local,Release;Local}
 
 # Nexus Maven Repositories
 nexus.base:				${def;nexusUrl;"http://nexus.default.com"}
@@ -22,8 +21,6 @@ nexus.location:			${nexus.base}/repository
 nexus.repo:				${nexus.location}/maven
 # The Release repo holds the released provider bundles to be deployed
 releaserepo:			${nexus.location}/${nexus.path}
-# OBR Repository
-obrrepo:				${nexus.location}/obr
 
 # For short-term experimental development
 # Keeps track of transient dependencies as well, which is very useful.
